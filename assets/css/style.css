@@ -23,10 +23,12 @@
     --jet: hsl(0, 0%, 20%);
     --redJoyCon: #ff3131;
     --blueJoyCon: #38b6ff;
+    --someBlue: #004aad;
+    --someBlue2: #0632ff;
 
     /*Transition*/
     --transition1: 0.2s ease;
-    --transition2: 0.25 ease-in;
+    --transition2: 0.25s ease-in;
 
     /*Padding*/
     --paddingSections: 100px;
@@ -83,7 +85,7 @@ html {
 }
 
 body {
-    background-color: var(--eerie-black);
+    background-color: var(--someBlue);
 
 }
 
@@ -91,9 +93,57 @@ body.active {
     overflow: hidden;
 }
 
+.container{
+    padding: 15px;
+}
+/*------------------------------------*\
+*HEADER
+/*------------------------------------*/
+
+.header{
+    position: fixed;
+    backdrop-filter: blur(20px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    transition: var(--transition2);
+    z-index: 1000;
+    
+}
+
+.header:active {
+    backdrop-filter: none;
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerActions {
+    display: none;
+}
+
+
+.menuMobile{
+    border: none;
+    background: transparent;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
 ion-icon {
+    cursor: pointer;
     color: var(--light-gray)
 }
+
 
 .search {
     border: none;
