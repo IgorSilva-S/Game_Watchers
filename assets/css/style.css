@@ -21,6 +21,8 @@
     --white: hsl(0, 100%, 100%);
     --black: hsl(0, 0%, 0%);
     --jet: hsl(0, 0%, 20%);
+    --redJoyCon: #ff3131;
+    --blueJoyCon: #38b6ff;
 
     /*Transition*/
     --transition1: 0.2s ease;
@@ -87,4 +89,14 @@ body {
 
 body.active {
     overflow: hidden;
+}
+
+ion-icon {
+    color: var(--light-gray)
+}
+
+.search {
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
 }
