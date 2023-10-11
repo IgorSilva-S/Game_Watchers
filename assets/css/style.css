@@ -82,6 +82,7 @@ ion-icon {
 html {
     font-family: var(--fontFamily-Poppins);
     scroll-behavior: smooth;
+    color: #eee;
 }
 
 body {
@@ -108,13 +109,7 @@ body.active {
     width: 100%;
     padding: 25px;
     transition: var(--transition2);
-    z-index: 1000;
-    
-}
-
-.header:active {
-    backdrop-filter: none;
-    padding: 20px;
+    z-index: 1000;  
 }
 
 .header .container{
@@ -141,12 +136,176 @@ body.active {
 
 ion-icon {
     cursor: pointer;
-    color: var(--light-gray)
+    color: var(--blueJoyCon)
 }
 
+ion-icon[name="logo-whatsapp"]:hover, 
+ion-icon[name="logo-whatsapp"]:active{
+    color: rgb(26, 247, 26);
+}
+
+ion-icon[name="logo-instagram"]:hover, 
+ion-icon[name="logo-instagram"]:active{
+    color: #AD34B0;
+} 
+
+ion-icon[name="logo-twitter"]:hover, 
+ion-icon[name="logo-twitter"]:active{
+    color: rgb(152, 209, 255);
+}
+
+ion-icon[name="logo-youtube"]:hover, 
+ion-icon[name="logo-youtube"]:active{
+    color: #ff0000;
+}
+
+ion-icon[name="logo-facebook"]:hover, 
+ion-icon[name="logo-facebook"]:active{
+    color: #104ed4;
+}
+
+ion-icon[name="logo-snapchat"]:hover, 
+ion-icon[name="logo-snapchat"]:active{
+    color: rgb(247, 243, 26);
+}
 
 .search {
     border: none;
     border-radius: 4px;
     background-color: transparent;
 }
+
+a {
+    color: var(--blueJoyCon);
+}
+
+a:active {
+    color: var(--redJoyCon);
+}
+
+.navbar {
+    position: fixed;
+    margin-top: 0;
+    right: -300px;
+    background: var(--someBlue);
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    transition: var(--transition2);
+    visibility: hidden;
+}
+
+.navbar.active {
+    right: 0;
+    visibility: visible;
+    transition: var(--transition2);
+}
+
+.navbar-top{
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-close {
+    font-size: 30px;
+    color: white;
+}
+
+.menu-close ion-icon:hover {
+    animation-name: glitchEffect;
+    animation-duration: .3s;
+    animation-timing-function: steps(1);
+}
+
+@keyframes glitchEffect {
+    0% {
+        color: var(--blueJoyCon);
+        padding-top: -10px;
+        padding-left: -10px;
+    }
+
+    20% {
+        color: var(--eerie-black);
+        padding-bottom: -10px;
+        padding-right: -10px;
+    }
+
+    40% {
+        color: var(--redJoyCon);
+        padding-top: -10px;
+        padding-right: -10px;
+    }
+
+    60% {
+        color: var(--eerie-black);
+        padding-bottom: -10px;
+        padding-left: -10px;
+    }
+
+    80% {
+        color: var(--redJoyCon);
+        padding-top: -10px;
+        padding-right: -10px;
+    }
+    100% {
+        color: var(--blueJoyCon);
+        padding-top: -10px;
+        padding-left: -10px;
+    }
+}
+
+h1:hover {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 900;
+    /*text-shadow: var(--redJoyCon) -4px -4px 2px,
+                 var(--blueJoyCon) 4px 4px 2px;*/
+    animation-name: glitchText;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes glitchText {
+    0% {
+        text-shadow: var(--redJoyCon) -4px -4px 2px,
+        var(--blueJoyCon) 4px 4px 2px;
+    }
+    10% {
+        text-shadow: none;
+    }
+    20% {
+        text-shadow: var(--redJoyCon) -4px -4px 2px,
+        var(--blueJoyCon) 4px 4px 2px;
+    }
+    30% {
+        text-shadow: none;
+    }
+    40% {
+        text-shadow: var(--redJoyCon) -4px -4px 2px,
+        var(--blueJoyCon) 4px 4px 2px;
+    }
+    50% {
+        text-shadow: none;
+    }
+    60% {
+        text-shadow: var(--redJoyCon) -4px -4px 2px,
+        var(--blueJoyCon) 4px 4px 2px;
+    }
+    70% {
+        text-shadow: none;
+    }
+    80% {
+        text-shadow: var(--redJoyCon) -4px -4px 2px,
+        var(--blueJoyCon) 4px 4px 2px;
+    }
+    90% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: var(--redJoyCon) -4px -4px 2px,
+        var(--blueJoyCon) 4px 4px 2px;
+    }
+}
+
