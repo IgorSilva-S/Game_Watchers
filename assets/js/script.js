@@ -17,24 +17,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* navOpenBtn.addEventListener('click', function() {
-    navBar.className = "navbar active"
-   })
-   
-   navCloseBtn.addEventListener('click', function() {
-       navBar.className = "navbar"
-      })*/

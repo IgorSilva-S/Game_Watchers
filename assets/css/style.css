@@ -87,7 +87,7 @@ html {
 
 body {
     background-color: var(--eerie-black);
-
+    margin-top: 150px;
 }
 
 body.active {
@@ -129,9 +129,6 @@ body.active {
     font-size: 50px;
     cursor: pointer;
 }
-
-
-
 
 
 ion-icon {
@@ -376,5 +373,3 @@ ion-icon[name="logo-snapchat"]:active{
 .overlay.active{
     pointer-events: all;
 }
-
-/* KKK = KU KLUX KLAIN */
