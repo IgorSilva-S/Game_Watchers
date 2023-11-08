@@ -4,6 +4,7 @@
    const navCloseBtn = document.querySelector('[data-navbar-close]')
    const navBar = document.querySelector('[data-navbar]');
    const overlay = document.querySelector('[data-overlay]');
+   const siteName = document.querySelector('[data-name]')
 
    const nav = [navOpenBtn, navCloseBtn, overlay]
 
@@ -13,7 +14,9 @@
     })
   }
 
-
-
-
-
+  setInterval(() => {
+    siteName.classList.add('anime-name')
+    setTimeout(() => {
+      siteName.classList.remove('anime-name')
+    }, 400);
+  }, 5000);
